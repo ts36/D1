@@ -87,5 +87,5 @@ app.get("/api/orders", async (req, res) => {
 
 // 啟動伺服器
 app.listen(PORT, () => {
-  console.log(`伺服器正在運行於 http://dessertshop-a3a2d2cnh6akepar.eastasia-01.azurewebsites.net`);
+  console.log(`伺服器正在運行於 https://testd-feb2evd8hbg2d8f0.eastasia-01.azurewebsites.net`);
 });
