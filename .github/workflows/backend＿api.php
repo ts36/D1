@@ -5,12 +5,6 @@ $database = "DB";
 $username = "tsou36";
 $password = "Aa123456";
 
-<?php
-// 資料庫連線設定
-$serverName = "your-server.database.windows.net";
-$database = "your-database";
-$username = "your-username";
-$password = "your-password";
 
 try {
     $conn = new PDO("sqlsrv:server=$serverName;Database=$database", $username, $password);
