@@ -29,7 +29,7 @@
 // 從後端獲取商品列表
 async function loadProducts() {
     try {
-        const response = await fetch('backend_api.php?action=getProducts');
+        const response = await fetch('https://qqw-cqe5eugtb3ahf5a8.canadacentral-01.azurewebsites.net/backend_api.php?action=getProducts');
         const products = await response.json();
 
         const productList = document.getElementById('productList');
@@ -68,7 +68,7 @@ document.addEventListener('click', async function (e) {
         }
 
         try {
-            const response = await fetch('backend_api.php?action=addToCart', {
+            const response = await fetch('https://qqw-cqe5eugtb3ahf5a8.canadacentral-01.azurewebsites.net/backend_api.php?action=addToCart', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: new URLSearchParams({
