@@ -105,8 +105,6 @@ function addToCart($conn) {
 }
 
 // 建立訂單
-const response = await fetch('https://qqw-cqe5eugtb3ahf5a8.canadacentral-01.azurewebsites.net/backend_api.php?action=createOrder');
-
 function createOrder($conn) {
     $userId = $_POST['user_id'] ?? '';
     $cartItems = json_decode($_POST['cart_items'] ?? '[]', true);
